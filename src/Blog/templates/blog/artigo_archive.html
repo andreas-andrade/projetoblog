@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+	<a href="http://www.djangoproject.com"><img src="{{MEDIA_URL}}galeria/original/django-logo-square.png" id="minhafoto" alt="" title="Django Framework"/> </a>
+{% for artigo in latest %}
+    <article class="artigo">
+        <a href="{{artigo.get_absolute_url}}" class="artigos"><b class="b_artigo">{{ artigo.titulo }}</b></a>
+        <div class="conteudo">
+            Publicado há {{artigo.publicacao|timesince}} <br />
+            {{ artigo.conteudo }}
+        </div>
+    </article>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block titulo%} {{artigo.titulo}}-{{block.super}} {% endblock  %}
+
+{% block h1 %} {{artigo.titulo}} {% endblock %}
+
+{% block conteudo %}
+	{% with artigo as objeto %}
+	{% include "tags/tags_para_objeto.html" %}
+	{% endwith %}
+	{{artigo.conteudo}}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,75 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+    <title>{% block titulo %}{% trans "Blog do Andreas" %}{% endblock %}</title>
+    {% block meta %}
+    	<meta charset="utf-8" />
+	  	<meta name="author" content="Andreas A. Adelino" />
+	  	<meta name="keywords" content="python, django, blog, " />
+	  	<meta name="description" content="Este é o blog do Andreas um recém formado em ciência da computação aprendendo Django." />
+  	{% endblock meta %}
+  	{% block feeds %}
+    	<link rel="alternate" type="application/rss+xml" title="Últimos artigos do Andreas" href="/rss/ultimos/" />
+    {% endblock feeds %}
+    {% block style %}
+    	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}layout.css" />
+    {% endblock style %}
+    {% block scripts %}
+    {% endblock scripts %}
+</head>
+
+<body>
+   	<div id="tudo">
+	    <div id="topo">
+		    {% block topo %}
+				{% trans "Django Blog" %} &lt;&gt; 
+				{% include "idiomas.html" %}
+			{% endblock topo %}
+		</div>
+	    {% if messages %}
+			<ul>
+			    {% for message in messages %}
+			    <li>{{ message }}</li>
+			    {% endfor %}
+			</ul>
+		{% endif %}
+	    
+		<div id="menu">
+			{% block menu %}
+			{% spaceless %}
+				<ul>
+					<li><a href="/"> {% trans "Página Inicial" %}</a></li>
+					<li><a href="{% url galeria.views.albuns %}">{% trans "Galeria de imagens" %}</a></li>
+					<li><a href="{% url tags.views.tags %}">{% trans "Tags" %}</a></li>
+					<li><a href="{% url Blog.views.contato %}">{% trans "Contato" %}</a></li>
+					<li><a href="{% url contas %}">{% trans "Contas" %}</a></li>
+					 {% if user.is_authenticated %}
+					 	  <li><a href="{% url mudar_senha %}">{% trans "Mudar senha" %}</a></li>
+					 	  <li><a href="/sobre-mim/">{% trans "Sobre mim" %}</a></li>
+				      	  <li><a href="{% url sair %}">{% trans "Sair" %}</a></li>
+				     {% else %}
+					      <li><a href="{% url entrar %}">{% trans "Entrar" %}</a></li>
+					      <li><a href="{% url registrar %}">{% trans "Registre-se" %}</a></li>
+					      <li><a href="/sobre-mim/">{% trans "Sobre mim" %}</a></li>
+				     {% endif %}
+				     
+				</ul>
+			{% endspaceless %}
+			{% endblock menu %}
+		</div>
+		
+		<h1>{% block h1%}{% endblock %}</h1>
+		<div class="corpo">
+			{% block conteudo %}{% endblock %}
+		</div>
+		
+		{% include "rodape.html" %}
+	</div>
+	
+	<div class="figura">
+  		<a href="http://www.djangoproject.com"><img class="escala" src="/media/galeria/original/mt_django.jpg" alt="Logo DJango" title="Logo DJango" width="500" height="128" /></a>
+  		<p>Django Framework</p>
+    </div>
+</body>
+</html>

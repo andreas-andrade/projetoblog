@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block titulo %}{{ album }} - {{ block.super }}{% endblock %}
+
+{% block h1 %}{{ album }}{% endblock %}
+{% block style %}
+{{block.super}}
+<style type="text/css">
+	#tudo{
+		background-image: url("/media/galeria/original/hyyw29i.png");
+		
+	}
+</style>
+{% endblock %}
+{% block conteudo %}
+
+	{% for imagem in imagens %}
+		<div class="miniaturas">
+			<a href="{{ imagem.get_absolute_url }}"> <img src="{{ imagem.thumbnail.url }}" title="{{imagem}}" alt="{{imagem}}" title="{{imagem}}" /> </a>
+			<p> {{imagem}}</p>
+		</div>
+	{% endfor %}
+{% endblock conteudo %}

@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-10 16:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\Blog\forms.py:51
+msgid "Nome"
+msgstr "Name"
+
+#: .\Blog\forms.py:52
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: .\Blog\forms.py:53
+msgid "Mensagem"
+msgstr "Message"
+
+#: .\Blog\templates\base.html.py:5
+msgid "Blog do Andreas"
+msgstr "Andreas Blog"
+
+#: .\Blog\templates\base.html.py:27
+msgid "Django Blog"
+msgstr "Django Blog"
+
+#: .\Blog\templates\base.html.py:44
+msgid "Página Inicial"
+msgstr "Initial Page"
+
+#: .\Blog\templates\base.html.py:45
+msgid "Galeria de imagens"
+msgstr "Galery"
+
+#: .\Blog\templates\base.html.py:46
+msgid "Tags"
+msgstr "Tags"
+
+#: .\Blog\templates\base.html.py:47
+msgid "Contato"
+msgstr "Contact"
+
+#: .\Blog\templates\base.html.py:48
+msgid "Contas"
+msgstr "Bill"
+
+#: .\Blog\templates\base.html.py:50 .\Blog\templates\mudar_senha.html.py:5
+#: .\Blog\templates\mudar_senha.html.py:6
+#: .\Blog\templates\mudar_senha.html.py:16
+msgid "Mudar senha"
+msgstr "Change Password"
+
+#: .\Blog\templates\base.html.py:51 .\Blog\templates\base.html.py:56
+msgid "Sobre mim"
+msgstr "About Me"
+
+#: .\Blog\templates\base.html.py:52
+msgid "Sair"
+msgstr "Exit"
+
+#: .\Blog\templates\base.html.py:54 .\Blog\templates\entrar.html.py:5
+#: .\Blog\templates\entrar.html.py:6 .\Blog\templates\entrar.html.py:16
+msgid "Entrar"
+msgstr "Enter"
+
+#: .\Blog\templates\base.html.py:55
+msgid "Registre-se"
+msgstr "Register"
+
+#: .\Blog\templates\idiomas.html.py:14
+msgid "Mudar idioma"
+msgstr "Change Language"
+
+#: .\Blog\templates\mudar_senha_concluido.html.py:5
+#: .\Blog\templates\mudar_senha_concluido.html.py:6
+msgid "Senha alterada"
+msgstr "Password Changed"
+
+#: .\Blog\templates\registrar.html.py:5 .\Blog\templates\registrar.html.py:6
+msgid "Registro de usuario"
+msgstr "User account"
+
+#: .\Blog\templates\registrar.html.py:16
+msgid "Registrar"
+msgstr "Register"
+
+#: .\Blog\templates\sair.html.py:5 .\Blog\templates\sair.html.py:6
+msgid "Voce saiu do sistema"
+msgstr ""
+
+#: .\Blog\templates\todos_os_usuarios.html.py:5
+#: .\Blog\templates\todos_os_usuarios.html.py:6
+msgid "Todos os usuarios do sistema"
+msgstr "All Users"
+
+#: .\contas\models.py:70
+msgid "Debito"
+msgstr "Debit"
+
+#: .\contas\models.py:71
+msgid "Credito"
+msgstr "Credit"
+
+#: .\contas\models.py:77
+msgid "A Pagar"
+msgstr "To pay"
+
+#: .\contas\models.py:78
+msgid "Pago"
+msgstr "Paid"
+
+#: .\contas\templates\contas\conta.html.py:9
+msgid "Editar"
+msgstr "Edit"
+
+#: .\contas\templates\contas\conta.html.py:10
+msgid "Excluir"
+msgstr "Exclude"
+
+#: .\contas\templates\contas\conta.html.py:12
+#: .\contas\templates\contas\conta.html.py:30
+msgid "Valor"
+msgstr "Value"
+
+#: .\contas\templates\contas\conta.html.py:13
+msgid "Vencimento"
+msgstr "Win"
+
+#: .\contas\templates\contas\conta.html.py:14
+msgid "Pessoa"
+msgstr "People"
+
+#: .\contas\templates\contas\conta.html.py:15
+msgid "Histórico"
+msgstr "History"
+
+#: .\contas\templates\contas\conta.html.py:16
+msgid "Status"
+msgstr "Status"
+
+#: .\contas\templates\contas\conta.html.py:18
+msgid "Pagamento"
+msgstr "Payment"
+
+#: .\contas\templates\contas\conta.html.py:25
+msgid "Pagamentos"
+msgstr "Payments"
+
+#: .\contas\templates\contas\conta.html.py:29
+msgid "Data"
+msgstr "Date"
+
+#: .\contas\templates\contas\conta.html.py:44
+msgid "Novo pagamento"
+msgstr "New Pay"
+
+#: .\contas\templates\contas\conta.html.py:51
+msgid "Salvar pagamento"
+msgstr "Save Pay"
+
+#: .\contas\templates\contas\contas.html.py:5
+#: .\contas\templates\contas\contas.html.py:6
+msgid "Contas Pessoais"
+msgstr "Personal Account"
+
+#: .\contas\templates\contas\contas.html.py:9
+msgid "Contas a Pagar"
+msgstr "Bill to pay"
+
+#: .\contas\templates\contas\contas.html.py:17
+#: .\contas\templates\contas\contas.html.py:28
+msgid "Ver todas"
+msgstr "See All"
+
+#: .\contas\templates\contas\contas.html.py:18
+#: .\contas\templates\contas\contas.html.py:29
+msgid "Criar nova"
+msgstr "Create New"
+
+#: .\contas\templates\contas\contas.html.py:20
+msgid "Contas a Receber"
+msgstr "Bill to receivable"
+
+#: .\galeria\models.py:28
+msgid "Imagem"
+msgstr "Galery"
+
+#: .\galeria\models.py:29
+msgid "Imagens"
+msgstr "Galery"

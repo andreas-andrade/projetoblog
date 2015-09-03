@@ -1,0 +1,27 @@
+{% load i18n %}
+
+{% get_available_languages as LANGUAGES %}
+<style type="text/css">
+	.ch_idioma_brasil{
+		width:42px;
+		height: 27px;;
+		background: url("C:/Users/Andreas/Pictures/brasil.png") no-repeat top left;
+		border:1px solid black;
+	}
+	.ch_idioma_eua{
+		width:42px;
+		height: 27px;;
+		background: url("C:/Users/Andreas/Pictures/eua.png") no-repeat top left;
+		border:1px solid black;
+	}
+</style>
+<div class="idiomas">
+  <form action="/i18n/setlang/" method="post">{% csrf_token %}
+    <select name="language">
+      {% for lang in LANGUAGES %}
+      	<option value="{{ lang.0 }}">{{ lang.1 }}</option>
+      {% endfor %}
+    </select>
+    <input type="submit" value="{% trans "Mudar idioma" %}" />
+  </form>
+</div>

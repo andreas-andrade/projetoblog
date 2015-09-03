@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/Blog/feeds.py=utf8
+encoding//src/Blog/settings.py=UTF-8
+encoding//src/Blog/templates/base.html=UTF-8
+encoding//src/Blog/templates/blog/artigo.html=UTF-8
+encoding//src/Blog/templates/blog/artigo_archive.html=UTF-8
+encoding//src/Blog/templates/rodape.html=UTF-8
+encoding//src/contas/models.py=utf-8
+encoding//src/contas/urls.py=utf-8
+encoding//src/contas/views.py=utf-8
+encoding//src/galeria/models.py=utf-8
+encoding//src/settings.py=UTF-8
+encoding/psettings.py=utf8
